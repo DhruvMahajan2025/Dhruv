@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price Sorter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        th {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="sorter">Sort Products:</label>
+        <select id="sorter">
+            <option value="">Select</option>
+            <option value="asc">Price: Low to High</option>
+            <option value="dsc">Price: High to Low</option>
+        </select>
+
+        <table id="product_list" border="1"></table>
+    </div>
+
+    <script src="script-1.2.2.js"></script>
+</body>
+</html>
